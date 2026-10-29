@@ -21,70 +21,13 @@
       </ul>
     </nav>
   </header>
-
-  <main class="content-container">
-    <div class="hero-banner">
-      <span class="tag-badge">⚡ National Energy Standards</span>
-      <h1>Household Energy Consumption in Australia</h1>
-      <p class="subtitle">Exploring appliance efficiency, annual running costs, and emission benchmarks across Australian households.</p>
-    </div>
-
-    <div class="story-stream">
-      
-      <section class="story-block">
-        <div class="story-content">
-          <h2>The Energy Rating System</h2>
-          <p>
-            Australia’s <strong>Equipment Energy Efficiency (E3) Program</strong> mandates that major electrical appliances sold in Australia carry the official Energy Rating Label. 
-          </p>
-          <p>
-            The star scale ranges from 1 to 6 stars, with an extended 10-star super-efficiency bracket for advanced technologies. Choosing higher star ratings ensures lower long-term grid demand and continuous energy savings.
-          </p>
-        </div>
-        <div class="story-stat-box">
-          <div class="stat-number">10 ★</div>
-          <div class="stat-label">Max Efficiency Rating</div>
-          <p class="stat-desc">Top-tier energy-saving appliances qualified under the Australian GEMS Act.</p>
-        </div>
-      </section>
-
-      <section class="story-block reversed">
-        <div class="story-content">
-          <h2>Why Star Ratings Matter</h2>
-          <p>
-            Electrical appliances account for roughly <strong>30% of average Australian household energy bills</strong>. Selecting higher-rated appliances directly mitigates rising electricity tariffs.
-          </p>
-          <p>
-            Beyond cost savings, reducing household kilowatt-hours lowers the load on fossil-fuel generation across the National Electricity Market (NEM), directly curbing greenhouse gas emissions.
-          </p>
-        </div>
-        <div class="story-stat-box">
-          <div class="stat-number">30%</div>
-          <div class="stat-label">Household Bill Share</div>
-          <p class="stat-desc">Average electricity bill percentage consumed solely by home appliances.</p>
-        </div>
-      </section>
-
-      <section class="story-block">
-        <div class="story-content">
-          <h2>Annual Energy Consumption (kWh)</h2>
-          <p>
-            Every label prominently prints the appliance's standardized <strong>kWh/year</strong> usage under average Australian operating patterns.
-          </p>
-          <p>
-            By taking this figure and multiplying it by your state's current tariff (averaging between <strong>$0.30 to $0.35 per kWh</strong>), consumers can accurately calculate their exact yearly operating expenses before purchasing.
-          </p>
-        </div>
-        <div class="story-stat-box">
-          <div class="stat-number">~$0.33</div>
-          <div class="stat-label">Average Tariff / kWh</div>
-          <p class="stat-desc">Multiply kWh/year by your local tariff to estimate total yearly operational cost.</p>
-        </div>
-      </section>
-
-    </div>
-  </main>
-
+    <h1>Appliance Energy Consumption</h1>
+    <div id="content"></div>
+    <!-- Give the SVG a size so shapes can be seen -->
+    <svg width="300" height="150"></svg>
+    <!-- Load D3 first, then your D3 code file -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="energy-d3.js"></script>
   <footer>
     <div class="footer-content">
       <p class="copyright">&copy; <span id="current-year"></span> Bryan Liew Yiew Khiong. All rights reserved.</p>
